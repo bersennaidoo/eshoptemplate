@@ -1,0 +1,18 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+
+  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+  {{ $dateHuman := .Date | time.Format ":date_long" }}
+  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+
+  {{ with (.Resources.GetMatch "100x100.*") }}
+  <img src="{{ .Permalink }}" alt="pliers">
+  {{ end }}
+  <h3>{{ .Params.id }}</h3>
+  <h3>{{ .Params.name }}</h3>
+  <h3>{{ .Params.price}}</h3>
+  <h3>{{ .Params.description }}</h3>
+
+  {{ .Content }}
+  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+{{ end }}

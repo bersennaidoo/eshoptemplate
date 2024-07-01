@@ -1,0 +1,60 @@
+baseURL = 'https://example.com'
+languageCode = 'en-us'
+title = 'EShop Template'
+theme = "eshopbstheme"
+
+[author]
+  facebook = "https://facebook.com/example"
+  twitter = "https://twitter.com/example"
+  github = "https://github.com/bersennaidoo"
+  email = "bersen.naidoo@gmail.com"
+  name = "EShop Template"
+  location = "Durban" 
+  phone = "+27XXXXXXXXX" 
+  hours = "Mon-Fri 9:00AM - 6:00PM, ET"
+
+[[menus.main]]
+  identifier = "HOME"
+  name = "HOME"
+  url = "/"
+  weight = 100
+  
+[[menus.main]]
+  identifier = "ABOUT"
+  name = "ABOUT"
+  url = "/about"
+  weight = 200
+
+[[menus.main]]
+  identifier = "SHOP"
+  name = "SHOP"
+  url = "/shop"
+  weight = 300
+
+[[menus.main]]
+  identifier = "CONTACT"
+  name = "CONTACT"
+  url = "/contact"
+  weight = 400
+
+[params]
+
+  copyright = "Copyright &copy; 2024 EShop Template. All Rights Reserved."
+  quicklinks = "Quick links"
+  information = "Information"
+
+  [[params.footer1]]
+    name = "Home"
+    url = "/"
+
+  [[params.footer1]]
+    name = "Shop"
+    url = "/shop"
+
+  [[params.footer1]]
+    name = "About"
+    url = "/about"
+
+  [[params.footer1]]
+    name = "Contact"
+    url = "/contact"
