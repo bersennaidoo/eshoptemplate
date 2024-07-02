@@ -3,16 +3,6 @@ languageCode = 'en-us'
 title = 'EShop Template'
 theme = "eshopbstheme"
 
-[author]
-  facebook = "https://facebook.com/example"
-  twitter = "https://twitter.com/example"
-  github = "https://github.com/bersennaidoo"
-  email = "bersen.naidoo@gmail.com"
-  name = "EShop Template"
-  location = "Durban" 
-  phone = "+27XXXXXXXXX" 
-  hours = "Mon-Fri 9:00AM - 6:00PM, ET"
-
 [[menus.main]]
   identifier = "HOME"
   name = "HOME"

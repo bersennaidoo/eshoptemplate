@@ -2,12 +2,6 @@ baseURL = 'https://example.org/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
 
-[[menus.main]]
-  identifier = "HOME"
-  name = "HOME"
-  url = "/"
-  weight = 100
-  
 [module]
   [module.hugoVersion]
     extended = false
