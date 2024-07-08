@@ -10,22 +10,29 @@ theme = "eshopbstheme"
   weight = 100
   
 [[menus.main]]
-  identifier = "ABOUT"
-  name = "ABOUT"
-  url = "/about"
+  identifier = "SERVICES"
+  name = "SERVICES"
+  url = "/services"
   weight = 200
 
 [[menus.main]]
-  identifier = "SHOP"
-  name = "SHOP"
-  url = "/shop"
+  identifier = "GALLERY"
+  name = "GALLERY"
+  url = "/gallery"
   weight = 300
+
+[[menus.main]]
+  identifier = "ABOUT"
+  name = "ABOUT"
+  url = "/about"
+  weight = 400
 
 [[menus.main]]
   identifier = "CONTACT"
   name = "CONTACT"
   url = "/contact"
   weight = 400
+
 
 [params]
 

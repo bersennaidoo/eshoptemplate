@@ -1,5 +1,6 @@
 +++
 title = 'Contact'
-date = 2024-06-30T14:01:37+02:00
+date = 2024-07-07T14:06:11+02:00
 draft = false
+layout = "contact"
 +++
