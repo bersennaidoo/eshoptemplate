@@ -1,56 +1,13 @@
 {{ define "main" }}
-<div class="container-fluid myphoto-section bg-myphoto-light" id="gallery">
-  <div class="container">
-    <div class="row">
-      <h3>Gallery</h3>
-      <div class="col">
-        <div
-          id="gallery-carousel"
-          class="carousel slide"
-          data-ride="carousel"
-          data-interval="3000"
-        >
-          <div class="carousel-inner" role="listbox">
-            <div style="height: 400px" class="carousel-item active">
-              <img src="/images/1600x900.png" />
-              <div class="carousel-caption">Brazil</div>
-            </div>
-            <div style="height: 400px" class="carousel-item">
-              <img src="/images/1600x900.png" />
-              <div class="carousel-caption">Datsun 260Z</div>
-            </div>
-            <div style="height: 400px" class="carousel-item">
-              <img src="/images/1600x900.png" />
-              <div class="carousel-caption">Skydive</div>
-            </div>
-          </div>
-          <a
-            class="left carousel-control"
-            href="#gallery-carousel"
-            role="button"
-            data-slide="prev"
-          >
-            <span class="icon-prev" aria-hidden="true"></span>
-          </a>
-          <a
-            class="right carousel-control"
-            href="#gallery-carousel"
-            role="button"
-            data-slide="next"
-          >
-            <span class="icon-next" aria-hidden="true"></span>
-          </a>
-          <ol class="carousel-indicators">
-            <li
-              data-target="#gallery-carousel"
-              data-slide-to="0"
-              class="active"
-            ></li>
-            <li data-target="#gallery-carousel" data-slide-to="1"></li>
-            <li data-target="#gallery-carousel" data-slide-to="2"></li>
-          </ol>
-        </div>
-      </div>
+<div class="container-fluid myphoto-section bg-myphoto-dark">
+  <div class="row">
+    <h3>Gallery</h3>
+    <div class="col">
+      {{ range .Pages }}
+      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+      {{ range .Resources }}
+      <img src="{{ .Permalink }}" alt="images" />
+      {{ end }} {{ .Summary }} {{ end }}
     </div>
   </div>
 </div>

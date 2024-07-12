@@ -1,0 +1,32 @@
+{
+  "comments": {
+    "dependencies": {
+      "@fortawesome/fontawesome-free": "eshopbstheme",
+      "@popperjs/core": "eshopbstheme",
+      "animate.css": "eshopbstheme",
+      "bootstrap": "eshopbstheme",
+      "jquery": "eshopbstheme",
+      "jquery.easing": "eshopbstheme",
+      "lightbox2": "eshopbstheme",
+      "tiny-slider": "eshopbstheme",
+      "waypoints": "eshopbstheme",
+      "wow.js": "eshopbstheme"
+    },
+    "devDependencies": {}
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "*",
+    "@popperjs/core": "*",
+    "animate.css": "*",
+    "bootstrap": "*",
+    "jquery": "*",
+    "jquery.easing": "*",
+    "lightbox2": "*",
+    "tiny-slider": "*",
+    "waypoints": "*",
+    "wow.js": "*"
+  },
+  "devDependencies": {},
+  "name": "eshoptemplate",
+  "version": "0.1.0"
+}

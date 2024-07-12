@@ -1,0 +1,16 @@
+{
+  "name": "eshopbstheme",
+  "version": "0.1.0",
+  "dependencies": {
+    "animate.css": "*",
+    "jquery.easing": "*",
+    "lightbox2": "*",
+    "waypoints": "*",
+    "bootstrap": "*",
+    "jquery": "*",
+    "@popperjs/core": "*",
+    "@fortawesome/fontawesome-free": "*",
+    "wow.js": "*",
+    "tiny-slider": "*"
+  }
+}

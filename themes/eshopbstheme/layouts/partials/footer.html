@@ -1,1 +1,16 @@
-<footer class="bg-myphoto-dark">Footer placeholder</footer>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-7 col-sm-12">
+                <ul class="list-style">
+                    {{ range site.Menus.footer }}
+                    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+            <div class="col-lg-6 col-md-7 col-sm-12">
+                <p>Copyright &copy;2024, All Rights Reserved</p>
+            </div>
+        </div>
+    </div>
+</footer>

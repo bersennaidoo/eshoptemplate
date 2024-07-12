@@ -1,0 +1,32 @@
+{
+  "comments": {
+    "dependencies": {
+      "@fortawsome/fontawsome-free": "project",
+      "@popperjs/core": "project",
+      "animate.css": "project",
+      "bootstrap": "project",
+      "jquery": "project",
+      "jquery.easing": "project",
+      "lightbox2": "project",
+      "tiny-slider": "project",
+      "waypoints": "project",
+      "wow.js": "project"
+    },
+    "devDependencies": {}
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "*",
+    "@popperjs/core": "*",
+    "animate.css": "*",
+    "bootstrap": "*",
+    "jquery": "*",
+    "jquery.easing": "*",
+    "lightbox2": "*",
+    "tiny-slider": "*",
+    "waypoints": "*",
+    "wow.js": "*"
+  },
+  "devDependencies": {},
+  "name": "eshopbstheme",
+  "version": "0.1.0"
+}

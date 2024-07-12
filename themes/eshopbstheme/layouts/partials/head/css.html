@@ -1,4 +1,4 @@
-{{- with resources.Get "scss/fontawesome_custom.scss" | toCSS }}
+{{- with resources.Get "scss/bootstrap.custom.scss" | toCSS }}
   {{- if eq hugo.Environment "development" }}
     <link rel="stylesheet" href="{{ .RelPermalink }}">
   {{- else }}
@@ -8,17 +8,4 @@
   {{- end }}
 {{- end }}
 
-{{- with resources.Get "sass/bootstrap.scss" | toCSS }}
-  {{- if eq hugo.Environment "development" }}
-    <link rel="stylesheet" href="{{ .RelPermalink }}">
-  {{- else }}
-    {{- with . | minify | fingerprint }}
-      <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
-    {{- end }}
-  {{- end }}
-{{- end }}
-
-<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet" type="text/css">
-<link href="https://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="/css/myphoto.css">
-<link rel="stylesheet" href="/lib/animate/animate.min.css">
+<link rel="stylesheet" href="/css/all.min.css">

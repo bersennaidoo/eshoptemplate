@@ -3,55 +3,64 @@ languageCode = 'en-us'
 title = 'EShop Template'
 theme = "eshopbstheme"
 
+[module]
+[[module.mounts]]
+source = "node_modules/bootstrap/scss"
+target = "assets/scss"
+
+[[module.mounts]]
+source = "node_modules/@fortawesome/fontawesome-free/css"
+target = "static/css"
+
+[[module.mounts]]
+source = "node_modules"
+target = "static/js"
+
+[menus]
 [[menus.main]]
-  identifier = "HOME"
-  name = "HOME"
+  identifier = "Home"
+  name = "Home"
   url = "/"
   weight = 100
-  
+
 [[menus.main]]
-  identifier = "SERVICES"
-  name = "SERVICES"
-  url = "/services"
+  identifier = "Blog"
+  name = "Blog"
+  url = "/blog"
+  weight = 110
+
+[[menus.main]]
+  identifier = "About"
+  name = "About"
+  url = "/about"
   weight = 200
 
 [[menus.main]]
-  identifier = "GALLERY"
-  name = "GALLERY"
-  url = "/gallery"
+  identifier = "Contact"
+  name = "Contact"
+  url = "/contact"
   weight = 300
 
-[[menus.main]]
-  identifier = "ABOUT"
-  name = "ABOUT"
-  url = "/about"
-  weight = 400
+[[menus.footer]]
+identifier = "Home"
+name = "Home"
+url = "/"
+weight = 100
 
-[[menus.main]]
-  identifier = "CONTACT"
-  name = "CONTACT"
-  url = "/contact"
-  weight = 400
+[[menus.footer]]
+identifier = "About"
+name = "About"
+url = "/about"
+weight = 200
 
+[[menus.footer]]
+identifier = "Contact"
+name = "Contact"
+url = "/contact"
+weight = 300
 
-[params]
-
-  copyright = "Copyright &copy; 2024 EShop Template. All Rights Reserved."
-  quicklinks = "Quick links"
-  information = "Information"
-
-  [[params.footer1]]
-    name = "Home"
-    url = "/"
-
-  [[params.footer1]]
-    name = "Shop"
-    url = "/shop"
-
-  [[params.footer1]]
-    name = "About"
-    url = "/about"
-
-  [[params.footer1]]
-    name = "Contact"
-    url = "/contact"
+[[menus.footer]]
+identifier = "Privacy Policy"
+name = "Privacy Policy"
+url = "/privacy"
+weight = 400
